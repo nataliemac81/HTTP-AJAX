@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 // import { Route } from 'react-router-dom';
 import FriendsList from './components/FriendsList';
+import CreateFriend from './components/CreateFriend';
 
 
 export default class App extends Component {
@@ -34,7 +35,8 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <FriendsList list={this.state.friendsList} />
+        <FriendsList friends={this.state.friendsList} />
+        <CreateFriend />
       </div>
     );
   }

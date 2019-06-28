@@ -10,10 +10,11 @@ export default class FriendsList extends Component {
     return (
       <div className="friends-list">
         <h3>Friends List:</h3>
-        {this.props.list.map(friend => (
+        {this.props.friends.map(friend => (
           <span className="friends-name">{friend.name}</span>
         ))}
       </div>
     );
   }
 }
+
